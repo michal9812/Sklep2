@@ -50,6 +50,13 @@ namespace SklepKomputerowy.CMS.Services
                    where (z.Imie.Contains(daneosobowe) || z.Nazwisko.Contains(daneosobowe))
                    select z;
            
+        } public IEnumerable<Zamowienie> FiltrujPoAdresie(string adres)
+        {
+          
+            return from z in _context.Zamowienie
+                   where z.Miasto.Contains(adres) || z.Ulica.Contains(adres) || z.NumerDomu.Contains(adres)
+                   select z;
+           
         }
     }
 }

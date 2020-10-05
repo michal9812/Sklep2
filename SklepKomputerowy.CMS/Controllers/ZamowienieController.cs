@@ -46,9 +46,13 @@ namespace SklepKomputerowy.CMS.Controllers
                 {
                     return PartialView(_filterZamowienieServices.FiltrujPoDacie(dataPoczotek, dataKoniec));
                 }
-                if (string.IsNullOrEmpty(dataPoczotek) && string.IsNullOrEmpty(dataKoniec))
+                else if (string.IsNullOrEmpty(dataPoczotek) && string.IsNullOrEmpty(dataKoniec) && string.IsNullOrEmpty(adres))
                 {
                     return PartialView(_filterZamowienieServices.FiltrujDaneOsobowe(imieNazwisko));
+                }
+                else if (string.IsNullOrEmpty(dataPoczotek) && string.IsNullOrEmpty(dataKoniec) && string.IsNullOrEmpty(imieNazwisko))
+                {
+                    return PartialView(_filterZamowienieServices.FiltrujPoAdresie(adres));
                 }
             }
             return null;
