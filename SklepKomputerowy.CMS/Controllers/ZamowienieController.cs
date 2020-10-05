@@ -47,7 +47,7 @@ namespace SklepKomputerowy.CMS.Controllers
                     return PartialView(_filterZamowienieServices.FiltrujPoDacie(dataPoczotek, dataKoniec));
                 }
             }
-            return null;
+            
 
         }
         // GET: Zamowienie/Details/5
