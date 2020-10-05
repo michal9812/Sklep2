@@ -43,5 +43,13 @@ namespace SklepKomputerowy.CMS.Services
             }
         
         }
+        public IEnumerable<Zamowienie> FiltrujDaneOsobowe(string daneosobowe)
+        {
+          
+            return from z in _context.Zamowienie
+                   where (z.Imie.Contains(daneosobowe) || z.Nazwisko.Contains(daneosobowe))
+                   select z;
+           
+        }
     }
 }
