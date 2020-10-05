@@ -1,0 +1,100 @@
+﻿@model SklepKomputerowy.CMS.EditModel.ProduktZdjeciaEditModel
+@{
+    ViewData["Title"] = "Tworzenie ktegorii";
+}
+<div class="row  ">
+    <h6 class="card-panel teal brown darken-4 white-text  header-backend-section-title">Dodaj Produkt</h6>
+</div>
+<form class="col s12" asp-action="Create" enctype="multipart/form-data" method="post">
+    <div class=" btn-cms-sklep-cms ">
+        <a asp-action="Index" class="btn-floating btn-small waves-effect waves-light blue darken-1" id="backToListitem "><i class="material-icons right">arrow_back</i></a>
+        <button class="btn-floating btn-small waves-effect waves-light green darken-1" type="submit"><i class="material-icons right">add</i></button>
+    </div>
+    <ul class="collapsible" id="colassiableAddProduct">
+        <li>
+            <div class="collapsible-header"><i class="material-icons">insert_drive_file</i>Dane Produktu</div>
+            <div class="collapsible-body">
+                <div asp-validation-summary="ModelOnly" class="text-danger red-text "></div>
+                <div class="row">
+                    <div class="input-field col s6">
+                        <label asp-for="Nazwa" ></label>
+                        <input asp-for="Nazwa"  />
+                        <span asp-validation-for="Nazwa" class="text-danger red-text"></span>
+                    </div>
+                    <div class="input-field col s6">
+                        <label asp-for="Kod" ></label>
+                        <input asp-for="Kod"  />
+                        <span asp-validation-for="Kod" class="text-danger red-text"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s6">
+                        <label asp-for="Cena" ></label>
+                        <input asp-for="Cena"  />
+                        <span asp-validation-for="Cena" class="text-danger red-text red-text red-text"></span>
+                    </div>
+                    <div class="input-field col s6">
+                        <select id="selectedCategoryName" asp-for="idKategorii" asp-items="ViewBag.ListaKategorii">
+                            <option value="">Wybierz katęgorię</option>
+                        </select>
+                        <label asp-for="idKategorii"></label>
+                    </div>
+                </div>
+                <div class="row">
+                    <label asp-for="FotoURL"></label>
+                    <div class="file-field input-field">
+                        <div class=" btn btn-flat btn-small waves-effect waves-light blue darken-1 white-text">
+                            <span><i class="material-icons">file_upload</i></span>
+                            <input type="file" name="file" />
+                        </div>
+                        <div class="file-path-wrapper">
+                            <input asp-for="FotoURL" class="file-path validate" type="text"
+                                   placeholder="Wybierz Plik" />
+                            <span asp-validation-for="FotoURL" class="text-danger red-text red-text"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <div class="input-field col s12">
+                            <textarea id="textareaDescriptionProdukt" class="materialize-textarea" asp-for="Opis"></textarea>
+                            <label asp-for="Opis"></label>
+                            <span asp-validation-for="Opis" class="text-danger red-text"></span>
+                        </div>
+
+
+                    </div>
+                </div>
+                <label>
+                    <input asp-for="Promocja" type="checkbox" class="filled-in" />
+                    <span>Czy prodókt objęty jest promocją</span>
+                </label>
+            </div>
+        </li>
+        <li>
+            <div class="collapsible-header"><i class="material-icons">insert_photo</i>Zdjecia Produktu</div>
+            <div class="collapsible-body">
+                <div class="row">
+                    <label asp-for="ZdjecieURL"></label>
+                    <div class="file-field input-field">
+                        <div class=" btn btn-flat btn-small waves-effect waves-light blue darken-1 white-text">
+                            <span><i class="material-icons">file_upload</i></span>
+                            <input type="file" multiple name="files" />
+                        </div>
+                        <div class="file-path-wrapper">
+                            <input asp-for="ZdjecieURL" class="file-path validate" type="text"
+                                   placeholder="Wybierz Plik" />
+                            <span asp-validation-for="FotoURL" class="text-danger red-text red-text"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+</form>
+<div>
+
+</div>
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

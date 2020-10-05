@@ -1,0 +1,998 @@
+[
+  {
+    "NazwaPL": "Afganistan",
+    "NazwaEN": "Afghanistan"
+  },
+  {
+    "NazwaPL": "Albania",
+    "NazwaEN": "Albania"
+  },
+  {
+    "NazwaPL": "Algieria",
+    "NazwaEN": "Algeria"
+  },
+  {
+    "NazwaPL": "Andora",
+    "NazwaEN": "Andorra"
+  },
+  {
+    "NazwaPL": "Angola",
+    "NazwaEN": "Angola"
+  },
+  {
+    "NazwaPL": "Anguilla",
+    "NazwaEN": "Anguilla"
+  },
+  {
+    "NazwaPL": "Antarktyka",
+    "NazwaEN": "Antarctica"
+  },
+  {
+    "NazwaPL": "Antigua i Barbuda",
+    "NazwaEN": "Antigua and Barbuda"
+  },
+  {
+    "NazwaPL": "Arabia Saudyjska",
+    "NazwaEN": "Saudi Arabia"
+  },
+  {
+    "NazwaPL": "Argentyna",
+    "NazwaEN": "Argentina"
+  },
+  {
+    "NazwaPL": "Armenia",
+    "NazwaEN": "Armenia"
+  },
+  {
+    "NazwaPL": "Aruba",
+    "NazwaEN": "Aruba"
+  },
+  {
+    "NazwaPL": "Australia",
+    "NazwaEN": "Australia"
+  },
+  {
+    "NazwaPL": "Austria",
+    "NazwaEN": "Austria"
+  },
+  {
+    "NazwaPL": "Azerbejdżan",
+    "NazwaEN": "Azerbaijan"
+  },
+  {
+    "NazwaPL": "Bahamy",
+    "NazwaEN": "Bahamas"
+  },
+  {
+    "NazwaPL": "Bahrajn",
+    "NazwaEN": "Bahrain"
+  },
+  {
+    "NazwaPL": "Bangladesz",
+    "NazwaEN": "Bangladesh"
+  },
+  {
+    "NazwaPL": "Barbados",
+    "NazwaEN": "Barbados"
+  },
+  {
+    "NazwaPL": "Belgia",
+    "NazwaEN": "Belgium"
+  },
+  {
+    "NazwaPL": "Belize",
+    "NazwaEN": "Belize"
+  },
+  {
+    "NazwaPL": "Benin",
+    "NazwaEN": "Benin"
+  },
+  {
+    "NazwaPL": "Bermudy",
+    "NazwaEN": "Bermuda"
+  },
+  {
+    "NazwaPL": "Bhutan",
+    "NazwaEN": "Bhutan"
+  },
+  {
+    "NazwaPL": "Białoruś",
+    "NazwaEN": "Belarus"
+  },
+  {
+    "NazwaPL": "Boliwia",
+    "NazwaEN": "Bolivia, Plurinational State of"
+  },
+  {
+    "NazwaPL": "Bonaire, Sint Eustatius i Saba",
+    "NazwaEN": "Bonaire, Sint Eustatius and Saba"
+  },
+  {
+    "NazwaPL": "Bośnia i Hercegowina",
+    "NazwaEN": "Bosnia and Herzegovina"
+  },
+  {
+    "NazwaPL": "Botswana",
+    "NazwaEN": "Botswana"
+  },
+  {
+    "NazwaPL": "Brazylia",
+    "NazwaEN": "Brazil"
+  },
+  {
+    "NazwaPL": "Brunei",
+    "NazwaEN": "Brunei Darussalam"
+  },
+  {
+    "NazwaPL": "Brytyjskie Terytorium Oceanu Indyjskiego",
+    "NazwaEN": "British Indian Ocean Territory"
+  },
+  {
+    "NazwaPL": "Brytyjskie Wyspy Dziewicze",
+    "NazwaEN": "Virgin Islands, British"
+  },
+  {
+    "NazwaPL": "Bułgaria",
+    "NazwaEN": "Bulgaria"
+  },
+  {
+    "NazwaPL": "Burkina Faso",
+    "NazwaEN": "Burkina Faso"
+  },
+  {
+    "NazwaPL": "Burundi",
+    "NazwaEN": "Burundi"
+  },
+  {
+    "NazwaPL": "Chile",
+    "NazwaEN": "Chile"
+  },
+  {
+    "NazwaPL": "Chiny",
+    "NazwaEN": "China"
+  },
+  {
+    "NazwaPL": "Chorwacja",
+    "NazwaEN": "Croatia"
+  },
+  {
+    "NazwaPL": "Curaçao",
+    "NazwaEN": "Curaçao"
+  },
+  {
+    "NazwaPL": "Cypr",
+    "NazwaEN": "Cyprus"
+  },
+  {
+    "NazwaPL": "Czad",
+    "NazwaEN": "Chad"
+  },
+  {
+    "NazwaPL": "Czarnogóra",
+    "NazwaEN": "Montenegro"
+  },
+  {
+    "NazwaPL": "Czechy",
+    "NazwaEN": "Czech Republic"
+  },
+  {
+    "NazwaPL": "Dalekie Wyspy Mniejsze Stanów Zjednoczonych",
+    "NazwaEN": "United States Minor Outlying Islands"
+  },
+  {
+    "NazwaPL": "Dania",
+    "NazwaEN": "Denmark"
+  },
+  {
+    "NazwaPL": "Demokratyczna Republika Konga",
+    "NazwaEN": "Congo, the Democratic Republic of the"
+  },
+  {
+    "NazwaPL": "Dominika",
+    "NazwaEN": "Dominica"
+  },
+  {
+    "NazwaPL": "Dominikana",
+    "NazwaEN": "Dominican Republic"
+  },
+  {
+    "NazwaPL": "Dżibuti",
+    "NazwaEN": "Djibouti"
+  },
+  {
+    "NazwaPL": "Egipt",
+    "NazwaEN": "Egypt"
+  },
+  {
+    "NazwaPL": "Ekwador",
+    "NazwaEN": "Ecuador"
+  },
+  {
+    "NazwaPL": "Erytrea",
+    "NazwaEN": "Eritrea"
+  },
+  {
+    "NazwaPL": "Estonia",
+    "NazwaEN": "Estonia"
+  },
+  {
+    "NazwaPL": "Etiopia",
+    "NazwaEN": "Ethiopia"
+  },
+  {
+    "NazwaPL": "Falklandy",
+    "NazwaEN": "Falkland Islands (Malvinas)"
+  },
+  {
+    "NazwaPL": "Fidżi",
+    "NazwaEN": "Fiji"
+  },
+  {
+    "NazwaPL": "Filipiny",
+    "NazwaEN": "Philippines"
+  },
+  {
+    "NazwaPL": "Finlandia",
+    "NazwaEN": "Finland"
+  },
+  {
+    "NazwaPL": "Francja",
+    "NazwaEN": "France"
+  },
+  {
+    "NazwaPL": "Francuskie Terytoria Południowe i Antarktyczne",
+    "NazwaEN": "French Southern Territories"
+  },
+  {
+    "NazwaPL": "Gabon",
+    "NazwaEN": "Gabon"
+  },
+  {
+    "NazwaPL": "Gambia",
+    "NazwaEN": "Gambia"
+  },
+  {
+    "NazwaPL": "Georgia Południowa i Sandwich Południowy",
+    "NazwaEN": "South Georgia and the South Sandwich Islands"
+  },
+  {
+    "NazwaPL": "Ghana",
+    "NazwaEN": "Ghana"
+  },
+  {
+    "NazwaPL": "Gibraltar",
+    "NazwaEN": "Gibraltar"
+  },
+  {
+    "NazwaPL": "Grecja",
+    "NazwaEN": "Greece"
+  },
+  {
+    "NazwaPL": "Grenada",
+    "NazwaEN": "Grenada"
+  },
+  {
+    "NazwaPL": "Grenlandia",
+    "NazwaEN": "Greenland"
+  },
+  {
+    "NazwaPL": "Gruzja",
+    "NazwaEN": "Georgia"
+  },
+  {
+    "NazwaPL": "Guam",
+    "NazwaEN": "Guam"
+  },
+  {
+    "NazwaPL": "Guernsey",
+    "NazwaEN": "Guernsey"
+  },
+  {
+    "NazwaPL": "Gujana Francuska",
+    "NazwaEN": "French Guiana"
+  },
+  {
+    "NazwaPL": "Gujana",
+    "NazwaEN": "Guyana"
+  },
+  {
+    "NazwaPL": "Gwadelupa",
+    "NazwaEN": "Guadeloupe"
+  },
+  {
+    "NazwaPL": "Gwatemala",
+    "NazwaEN": "Guatemala"
+  },
+  {
+    "NazwaPL": "Gwinea Bissau",
+    "NazwaEN": "Guinea-Bissau"
+  },
+  {
+    "NazwaPL": "Gwinea Równikowa",
+    "NazwaEN": "Equatorial Guinea"
+  },
+  {
+    "NazwaPL": "Gwinea",
+    "NazwaEN": "Guinea"
+  },
+  {
+    "NazwaPL": "Haiti",
+    "NazwaEN": "Haiti"
+  },
+  {
+    "NazwaPL": "Hiszpania",
+    "NazwaEN": "Spain"
+  },
+  {
+    "NazwaPL": "Holandia",
+    "NazwaEN": "Netherlands"
+  },
+  {
+    "NazwaPL": "Honduras",
+    "NazwaEN": "Honduras"
+  },
+  {
+    "NazwaPL": "Hongkong",
+    "NazwaEN": "Hong Kong"
+  },
+  {
+    "NazwaPL": "Indie",
+    "NazwaEN": "India"
+  },
+  {
+    "NazwaPL": "Indonezja",
+    "NazwaEN": "Indonesia"
+  },
+  {
+    "NazwaPL": "Irak",
+    "NazwaEN": "Iraq"
+  },
+  {
+    "NazwaPL": "Iran",
+    "NazwaEN": "Iran, Islamic Republic of"
+  },
+  {
+    "NazwaPL": "Irlandia",
+    "NazwaEN": "Ireland"
+  },
+  {
+    "NazwaPL": "Islandia",
+    "NazwaEN": "Iceland"
+  },
+  {
+    "NazwaPL": "Izrael",
+    "NazwaEN": "Israel"
+  },
+  {
+    "NazwaPL": "Jamajka",
+    "NazwaEN": "Jamaica"
+  },
+  {
+    "NazwaPL": "Japonia",
+    "NazwaEN": "Japan"
+  },
+  {
+    "NazwaPL": "Jemen",
+    "NazwaEN": "Yemen"
+  },
+  {
+    "NazwaPL": "Jersey",
+    "NazwaEN": "Jersey"
+  },
+  {
+    "NazwaPL": "Jordania",
+    "NazwaEN": "Jordan"
+  },
+  {
+    "NazwaPL": "Kajmany",
+    "NazwaEN": "Cayman Islands"
+  },
+  {
+    "NazwaPL": "Kambodża",
+    "NazwaEN": "Cambodia"
+  },
+  {
+    "NazwaPL": "Kamerun",
+    "NazwaEN": "Cameroon"
+  },
+  {
+    "NazwaPL": "Kanada",
+    "NazwaEN": "Canada"
+  },
+  {
+    "NazwaPL": "Katar",
+    "NazwaEN": "Qatar"
+  },
+  {
+    "NazwaPL": "Kazachstan",
+    "NazwaEN": "Kazakhstan"
+  },
+  {
+    "NazwaPL": "Kenia",
+    "NazwaEN": "Kenya"
+  },
+  {
+    "NazwaPL": "Kirgistan",
+    "NazwaEN": "Kyrgyzstan"
+  },
+  {
+    "NazwaPL": "Kiribati",
+    "NazwaEN": "Kiribati"
+  },
+  {
+    "NazwaPL": "Kolumbia",
+    "NazwaEN": "Colombia"
+  },
+  {
+    "NazwaPL": "Komory",
+    "NazwaEN": "Comoros"
+  },
+  {
+    "NazwaPL": "Kongo",
+    "NazwaEN": "Congo"
+  },
+  {
+    "NazwaPL": "Korea Południowa",
+    "NazwaEN": "Korea, Republic of"
+  },
+  {
+    "NazwaPL": "Korea Północna",
+    "NazwaEN": "Korea, Democratic People's Republic of"
+  },
+  {
+    "NazwaPL": "Kostaryka",
+    "NazwaEN": "Costa Rica"
+  },
+  {
+    "NazwaPL": "Kuba",
+    "NazwaEN": "Cuba"
+  },
+  {
+    "NazwaPL": "Kuwejt",
+    "NazwaEN": "Kuwait"
+  },
+  {
+    "NazwaPL": "Laos",
+    "NazwaEN": "Lao People's Democratic Republic"
+  },
+  {
+    "NazwaPL": "Lesotho",
+    "NazwaEN": "Lesotho"
+  },
+  {
+    "NazwaPL": "Liban",
+    "NazwaEN": "Lebanon"
+  },
+  {
+    "NazwaPL": "Liberia",
+    "NazwaEN": "Liberia"
+  },
+  {
+    "NazwaPL": "Libia",
+    "NazwaEN": "Libyan Arab Jamahiriya"
+  },
+  {
+    "NazwaPL": "Liechtenstein",
+    "NazwaEN": "Liechtenstein"
+  },
+  {
+    "NazwaPL": "Litwa",
+    "NazwaEN": "Lithuania"
+  },
+  {
+    "NazwaPL": "Luksemburg",
+    "NazwaEN": "Luxembourg"
+  },
+  {
+    "NazwaPL": "Łotwa",
+    "NazwaEN": "Latvia"
+  },
+  {
+    "NazwaPL": "Macedonia",
+    "NazwaEN": "Macedonia, the former Yugoslav Republic of"
+  },
+  {
+    "NazwaPL": "Madagaskar",
+    "NazwaEN": "Madagascar"
+  },
+  {
+    "NazwaPL": "Majotta",
+    "NazwaEN": "Mayotte"
+  },
+  {
+    "NazwaPL": "Makau",
+    "NazwaEN": "Macao"
+  },
+  {
+    "NazwaPL": "Malawi",
+    "NazwaEN": "Malawi"
+  },
+  {
+    "NazwaPL": "Malediwy",
+    "NazwaEN": "Maldives"
+  },
+  {
+    "NazwaPL": "Malezja",
+    "NazwaEN": "Malaysia"
+  },
+  {
+    "NazwaPL": "Mali",
+    "NazwaEN": "Mali"
+  },
+  {
+    "NazwaPL": "Malta",
+    "NazwaEN": "Malta"
+  },
+  {
+    "NazwaPL": "Mariany Północne",
+    "NazwaEN": "Northern Mariana Islands"
+  },
+  {
+    "NazwaPL": "Maroko",
+    "NazwaEN": "Morocco"
+  },
+  {
+    "NazwaPL": "Martynika",
+    "NazwaEN": "Martinique"
+  },
+  {
+    "NazwaPL": "Mauretania",
+    "NazwaEN": "Mauritania"
+  },
+  {
+    "NazwaPL": "Mauritius",
+    "NazwaEN": "Mauritius"
+  },
+  {
+    "NazwaPL": "Meksyk",
+    "NazwaEN": "Mexico"
+  },
+  {
+    "NazwaPL": "Mikronezja",
+    "NazwaEN": "Micronesia, Federated States of"
+  },
+  {
+    "NazwaPL": "Mjanma",
+    "NazwaEN": "Myanmar"
+  },
+  {
+    "NazwaPL": "Mołdawia",
+    "NazwaEN": "Moldova, Republic of"
+  },
+  {
+    "NazwaPL": "Monako",
+    "NazwaEN": "Monaco"
+  },
+  {
+    "NazwaPL": "Mongolia",
+    "NazwaEN": "Mongolia"
+  },
+  {
+    "NazwaPL": "Montserrat",
+    "NazwaEN": "Montserrat"
+  },
+  {
+    "NazwaPL": "Mozambik",
+    "NazwaEN": "Mozambique"
+  },
+  {
+    "NazwaPL": "Namibia",
+    "NazwaEN": "Namibia"
+  },
+  {
+    "NazwaPL": "Nauru",
+    "NazwaEN": "Nauru"
+  },
+  {
+    "NazwaPL": "Nepal",
+    "NazwaEN": "Nepal"
+  },
+  {
+    "NazwaPL": "Niemcy",
+    "NazwaEN": "Germany"
+  },
+  {
+    "NazwaPL": "Niger",
+    "NazwaEN": "Niger"
+  },
+  {
+    "NazwaPL": "Nigeria",
+    "NazwaEN": "Nigeria"
+  },
+  {
+    "NazwaPL": "Nikaragua",
+    "NazwaEN": "Nicaragua"
+  },
+  {
+    "NazwaPL": "Niue",
+    "NazwaEN": "Niue"
+  },
+  {
+    "NazwaPL": "Norfolk",
+    "NazwaEN": "Norfolk Island"
+  },
+  {
+    "NazwaPL": "Norwegia",
+    "NazwaEN": "Norway"
+  },
+  {
+    "NazwaPL": "Nowa Kaledonia",
+    "NazwaEN": "New Caledonia"
+  },
+  {
+    "NazwaPL": "Nowa Zelandia",
+    "NazwaEN": "New Zealand"
+  },
+  {
+    "NazwaPL": "Oman",
+    "NazwaEN": "Oman"
+  },
+  {
+    "NazwaPL": "Pakistan",
+    "NazwaEN": "Pakistan"
+  },
+  {
+    "NazwaPL": "Palau",
+    "NazwaEN": "Palau"
+  },
+  {
+    "NazwaPL": "Palestyna",
+    "NazwaEN": "Palestinian Territory, Occupied"
+  },
+  {
+    "NazwaPL": "Panama",
+    "NazwaEN": "Panama"
+  },
+  {
+    "NazwaPL": "Papua-Nowa Gwinea",
+    "NazwaEN": "Papua New Guinea"
+  },
+  {
+    "NazwaPL": "Paragwaj",
+    "NazwaEN": "Paraguay"
+  },
+  {
+    "NazwaPL": "Peru",
+    "NazwaEN": "Peru"
+  },
+  {
+    "NazwaPL": "Pitcairn",
+    "NazwaEN": "Pitcairn"
+  },
+  {
+    "NazwaPL": "Polinezja Francuska",
+    "NazwaEN": "French Polynesia"
+  },
+  {
+    "NazwaPL": "Polska",
+    "NazwaEN": "Poland"
+  },
+  {
+    "NazwaPL": "Portoryko",
+    "NazwaEN": "Puerto Rico"
+  },
+  {
+    "NazwaPL": "Portugalia",
+    "NazwaEN": "Portugal"
+  },
+  {
+    "NazwaPL": "Republika Południowej Afryki",
+    "NazwaEN": "South Africa"
+  },
+  {
+    "NazwaPL": "Republika Środkowoafrykańska",
+    "NazwaEN": "Central African Republic"
+  },
+  {
+    "NazwaPL": "Republika Zielonego Przylądka",
+    "NazwaEN": "Cape Verde"
+  },
+  {
+    "NazwaPL": "Reunion",
+    "NazwaEN": "Réunion"
+  },
+  {
+    "NazwaPL": "Rosja",
+    "NazwaEN": "Russian Federation"
+  },
+  {
+    "NazwaPL": "Rumunia",
+    "NazwaEN": "Romania"
+  },
+  {
+    "NazwaPL": "Rwanda",
+    "NazwaEN": "Rwanda"
+  },
+  {
+    "NazwaPL": "Sahara Zachodnia",
+    "NazwaEN": "Western Sahara"
+  },
+  {
+    "NazwaPL": "Saint Kitts i Nevis",
+    "NazwaEN": "Saint Kitts and Nevis"
+  },
+  {
+    "NazwaPL": "Saint Lucia",
+    "NazwaEN": "Saint Lucia"
+  },
+  {
+    "NazwaPL": "Saint Vincent i Grenadyny",
+    "NazwaEN": "Saint Vincent and the Grenadines"
+  },
+  {
+    "NazwaPL": "Saint-Barthélemy",
+    "NazwaEN": "Saint Barthélemy"
+  },
+  {
+    "NazwaPL": "Saint-Martin",
+    "NazwaEN": "Saint Martin (French part)"
+  },
+  {
+    "NazwaPL": "Saint-Pierre i Miquelon",
+    "NazwaEN": "Saint Pierre and Miquelon"
+  },
+  {
+    "NazwaPL": "Salwador",
+    "NazwaEN": "El Salvador"
+  },
+  {
+    "NazwaPL": "Samoa Amerykańskie",
+    "NazwaEN": "American Samoa"
+  },
+  {
+    "NazwaPL": "Samoa",
+    "NazwaEN": "Samoa"
+  },
+  {
+    "NazwaPL": "San Marino",
+    "NazwaEN": "San Marino"
+  },
+  {
+    "NazwaPL": "Senegal",
+    "NazwaEN": "Senegal"
+  },
+  {
+    "NazwaPL": "Serbia",
+    "NazwaEN": "Serbia"
+  },
+  {
+    "NazwaPL": "Seszele",
+    "NazwaEN": "Seychelles"
+  },
+  {
+    "NazwaPL": "Sierra Leone",
+    "NazwaEN": "Sierra Leone"
+  },
+  {
+    "NazwaPL": "Singapur",
+    "NazwaEN": "Singapore"
+  },
+  {
+    "NazwaPL": "Sint Maarten",
+    "NazwaEN": "Sint Maarten (Dutch part)"
+  },
+  {
+    "NazwaPL": "Słowacja",
+    "NazwaEN": "Slovakia"
+  },
+  {
+    "NazwaPL": "Słowenia",
+    "NazwaEN": "Slovenia"
+  },
+  {
+    "NazwaPL": "Somalia",
+    "NazwaEN": "Somalia"
+  },
+  {
+    "NazwaPL": "Sri Lanka",
+    "NazwaEN": "Sri Lanka"
+  },
+  {
+    "NazwaPL": "Stany Zjednoczone",
+    "NazwaEN": "United States"
+  },
+  {
+    "NazwaPL": "Suazi",
+    "NazwaEN": "Swaziland"
+  },
+  {
+    "NazwaPL": "Sudan",
+    "NazwaEN": "Sudan"
+  },
+  {
+    "NazwaPL": "Sudan Południowy",
+    "NazwaEN": "South Sudan"
+  },
+  {
+    "NazwaPL": "Surinam",
+    "NazwaEN": "Suriname"
+  },
+  {
+    "NazwaPL": "Svalbard i Jan Mayen",
+    "NazwaEN": "Svalbard and Jan Mayen"
+  },
+  {
+    "NazwaPL": "Syria",
+    "NazwaEN": "Syrian Arab Republic"
+  },
+  {
+    "NazwaPL": "Szwajcaria",
+    "NazwaEN": "Switzerland"
+  },
+  {
+    "NazwaPL": "Szwecja",
+    "NazwaEN": "Sweden"
+  },
+  {
+    "NazwaPL": "Tadżykistan",
+    "NazwaEN": "Tajikistan"
+  },
+  {
+    "NazwaPL": "Tajlandia",
+    "NazwaEN": "Thailand"
+  },
+  {
+    "NazwaPL": "Tajwan",
+    "NazwaEN": "Taiwan, Province of China"
+  },
+  {
+    "NazwaPL": "Tanzania",
+    "NazwaEN": "Tanzania, United Republic of"
+  },
+  {
+    "NazwaPL": "Timor Wschodni",
+    "NazwaEN": "Timor-Leste"
+  },
+  {
+    "NazwaPL": "Togo",
+    "NazwaEN": "Togo"
+  },
+  {
+    "NazwaPL": "Tokelau",
+    "NazwaEN": "Tokelau"
+  },
+  {
+    "NazwaPL": "Tonga",
+    "NazwaEN": "Tonga"
+  },
+  {
+    "NazwaPL": "Trynidad i Tobago",
+    "NazwaEN": "Trinidad and Tobago"
+  },
+  {
+    "NazwaPL": "Tunezja",
+    "NazwaEN": "Tunisia"
+  },
+  {
+    "NazwaPL": "Turcja",
+    "NazwaEN": "Turkey"
+  },
+  {
+    "NazwaPL": "Turkmenistan",
+    "NazwaEN": "Turkmenistan"
+  },
+  {
+    "NazwaPL": "Turks i Caicos",
+    "NazwaEN": "Turks and Caicos Islands"
+  },
+  {
+    "NazwaPL": "Tuvalu",
+    "NazwaEN": "Tuvalu"
+  },
+  {
+    "NazwaPL": "Uganda",
+    "NazwaEN": "Uganda"
+  },
+  {
+    "NazwaPL": "Ukraina",
+    "NazwaEN": "Ukraine"
+  },
+  {
+    "NazwaPL": "Urugwaj",
+    "NazwaEN": "Uruguay"
+  },
+  {
+    "NazwaPL": "Uzbekistan",
+    "NazwaEN": "Uzbekistan"
+  },
+  {
+    "NazwaPL": "Vanuatu",
+    "NazwaEN": "Vanuatu"
+  },
+  {
+    "NazwaPL": "Wallis i Futuna",
+    "NazwaEN": "Wallis and Futuna"
+  },
+  {
+    "NazwaPL": "Watykan",
+    "NazwaEN": "Holy See (Vatican City State)"
+  },
+  {
+    "NazwaPL": "Wenezuela",
+    "NazwaEN": "Venezuela, Bolivarian Republic of"
+  },
+  {
+    "NazwaPL": "Węgry",
+    "NazwaEN": "Hungary"
+  },
+  {
+    "NazwaPL": "Wielka Brytania",
+    "NazwaEN": "United Kingdom"
+  },
+  {
+    "NazwaPL": "Wietnam",
+    "NazwaEN": "Viet Nam"
+  },
+  {
+    "NazwaPL": "Włochy",
+    "NazwaEN": "Italy"
+  },
+  {
+    "NazwaPL": "Wybrzeże Kości Słoniowej",
+    "NazwaEN": "Côte d'Ivoire"
+  },
+  {
+    "NazwaPL": "Wyspa Bouveta",
+    "NazwaEN": "Bouvet Island"
+  },
+  {
+    "NazwaPL": "Wyspa Bożego Narodzenia",
+    "NazwaEN": "Christmas Island"
+  },
+  {
+    "NazwaPL": "Wyspa Man",
+    "NazwaEN": "Isle of Man"
+  },
+  {
+    "NazwaPL": "Wyspa Świętej Heleny, Wyspa Wniebowstąpienia i Tristan da Cunha",
+    "NazwaEN": "Saint Helena, Ascension and Tristan Cunha"
+  },
+  {
+    "NazwaPL": "Wyspy Alandzkie",
+    "NazwaEN": "Åland Islands"
+  },
+  {
+    "NazwaPL": "Wyspy Cooka",
+    "NazwaEN": "Cook Islands"
+  },
+  {
+    "NazwaPL": "Wyspy Dziewicze Stanów Zjednoczonych",
+    "NazwaEN": "Virgin Islands, U.S."
+  },
+  {
+    "NazwaPL": "Wyspy Heard i McDonalda",
+    "NazwaEN": "Heard Island and McDonald Islands"
+  },
+  {
+    "NazwaPL": "Wyspy Kokosowe",
+    "NazwaEN": "Cocos (Keeling) Islands"
+  },
+  {
+    "NazwaPL": "Wyspy Marshalla",
+    "NazwaEN": "Marshall Islands"
+  },
+  {
+    "NazwaPL": "Wyspy Owcze",
+    "NazwaEN": "Faroe Islands"
+  },
+  {
+    "NazwaPL": "Wyspy Salomona",
+    "NazwaEN": "Solomon Islands"
+  },
+  {
+    "NazwaPL": "Wyspy Świętego Tomasza i Książęca",
+    "NazwaEN": "Sao Tome and Principe"
+  },
+  {
+    "NazwaPL": "Zambia",
+    "NazwaEN": "Zambia"
+  },
+  {
+    "NazwaPL": "Zimbabwe",
+    "NazwaEN": "Zimbabwe"
+  },
+  {
+    "NazwaPL": "Zjednoczone Emiraty Arabskie",
+    "NazwaEN": "United Arab Emirates"
+  }
+]

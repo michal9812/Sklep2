@@ -1,0 +1,123 @@
+﻿@model IEnumerable<SklepKomputerowy.Data.Data.Sklep.Produkt>
+@{
+    ViewData["Title"] = "Index";
+}
+@*<h1>Index</h1>
+    <p>
+        <a asp-action="Create">Create New</a>
+    </p>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Kod)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Nazwa)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Cena)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.FotoURL)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Opis)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Promocja)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.idKategorii)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+    @foreach (var item in Model) {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Kod)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Nazwa)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Cena)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FotoURL)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Opis)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Promocja)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.idKategorii)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.idProduktu">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.idProduktu">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.idProduktu">Delete</a>
+                </td>
+            </tr>
+    }
+        </tbody>
+    </table>*@
+<div class="row">
+<div class="col s9  ">
+    <h6 class="flow-text">Lista Produktów</h6>
+</div>
+<div class="col s3  ">
+    <p>
+        <a asp-action="Create"  class="waves-effect waves-light btn btn-small blue darken-1"><i class="material-icons left">add</i>Dodaj Nową</a>
+    </p>
+</div>
+</div>
+@if (Model.Count() > 0)
+{
+    <div class="row">
+        <div class="col s12">
+            <table class="table table-striped ">
+                <thead>
+                    <tr>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Nazwa)
+                        </th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody class="edit-table">
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <th>
+                                @Html.DisplayFor(modelItem => item.Nazwa)
+                            </th>
+                            <partial  name="Przyciski/_PrzyciskEdycjaSzczegolyUsuniecie" model="@item.idProduktu" />
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+}
+else
+{
+    <!-- Modal Structure -->
+    <div id="modalListItemCheck" class="modal">
+        <div class="modal-content">
+            <h6>Nie znaleziono Produktu </h6>
+            <p>Czy chcesz dodac?</p>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-light btn red darken-1 white-text">Nie</a>
+            <a asp-action="Create" class="modal-close waves-effect waves-light btn green darken-1">Tak</a>
+        </div>
+    </div>
+    <div class="row">
+        <p class="card-panel teal yellow darken-2 white-text"> Nie ma kategorii</p>
+    </div>
+}

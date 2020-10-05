@@ -1,0 +1,61 @@
+﻿@model SklepKomputerowy.Data.Data.Sklep.Zdjecia
+@{
+    ViewData["Title"] = "Create";
+}
+@*<div class="row  ">
+        <h6 class="card-panel teal brown darken-4 white-text  header-backend-section-title">Dodaj Zdjecie</h6>
+    </div>
+    <div class="row">
+        <form class="col s12" asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger red-text "></div>
+            <div class=" btn-cms-sklep-cms ">
+                <a asp-action="Index" asp-controller="Produkt" class="btn-floating btn-small waves-effect waves-light blue darken-1" id="backToListitem "><i class="material-icons right">arrow_back</i></a>
+                <button class="btn-floating btn-small waves-effect waves-light green darken-1" type="submit" name="action"><i class="material-icons right">add</i></button>
+            </div>
+            <div asp-validation-summary="ModelOnly" class="text-danger red-text"></div>
+            <div class="row">
+                <label asp-for="ZdjecieURL"></label>
+                <div class="file-field input-field">
+                    <div class=" btn btn-flat btn-small waves-effect waves-light blue darken-1 white-text">
+                        <span><i class="material-icons">file_upload</i></span>
+                        <input type="file" name="file" multiple />
+                    </div>
+                    <div class="file-path-wrapper">
+                        <input asp-for="ZdjecieURL" class="file-path validate" type="text"
+                               placeholder="Wybierz Plik" />
+                        <span asp-validation-for="ZdjecieURL" class="text-danger red-text red-text"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <input asp-for="idProduktu"  hidden />
+                    <span asp-validation-for="idProduktu" class="text-danger"></span>
+                </div>
+            </div>
+        </form>
+    </div>*@
+
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="ZdjecieURL" ></label>
+                <input asp-for="ZdjecieURL"  />
+                <span asp-validation-for="ZdjecieURL" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="idProduktu" ></label>
+                <input asp-for="idProduktu"  />
+                <span asp-validation-for="idProduktu" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+       @section Scripts {
+       @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+       }

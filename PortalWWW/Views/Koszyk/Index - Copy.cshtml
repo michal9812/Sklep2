@@ -1,0 +1,163 @@
+﻿@model PortalWWW.ViewModels.KoszykViewModel
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_LayoutSklep.cshtml";
+}
+<div class="container">
+    <div class="row">
+        <h2 style="font-size:26px;padding:4px;margin:4px; font-weight:700">Koszyk</h2>
+        <div class="col  s7">
+            <div class="col s12 ">
+                @foreach (var item in Model.ElementyKoszyka)
+                {
+                    <div class="card white card-shoping-cart">
+                        <div class="card-content black-text card-content-shoping-card-item">
+                            <div class="row shopingCardItem">
+                                <div class="col s2">
+                                    <img src="~/DataFiles/@item.Produkt.FotoURL" class="responsive-img">
+                                </div>
+                                <div class="col s5">
+                                    <a  asp-page="/ProductDetalis" asp-route-id="@item.Produkt.idProduktu">  @String.Format( item.Produkt.Nazwa)</a>
+</div>
+                                <div class="col s5">
+                                    <div class="row deletecurrencyquantity ">
+                                        <div class="col s5">
+                                            @String.Format("{0:C}", item.Produkt.Cena)
+                                        </div>
+                                        <div class="col s5 btn-quantity">
+                                            
+                                            <div class="value-button" id="decrease" value="Decrease Value"><a class="btn-small  white" asp-action="UsunJeden" asp-controller="Koszyk" asp-route-id="@item.Produkt.idProduktu"><i class="material-icons black-text ">remove</i></a></div>
+                                            @String.Format( @item.Ilosc.ToString())
+                                            <div class="value-button" id="decrease"  value="Decrease Value"><a asp-action="DodajDoKoszyka" asp-controller="Koszyk" asp-route-id="@item.Produkt.idProduktu" class=" btn-small white  "><i class="material-icons black-text ">add</i></a></div>
+
+                                        </div>
+
+                                        
+                                        <div class="col s2">
+                                            <a class=" white-text btn-floating btn-small waves-effect waves-light white" asp-action="Delete" asp-route-Id="@Model">
+                                                <i class="material-icons center black-text">delete</i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    break;
+                }
+            </div>
+        </div>
+        <div class="col s4 push-s1">
+            <div class="col s12 ">
+                <div class="card horizontal">
+                    <div class="card-stacked">
+                        <div class="card-content">
+                            <div class="row" style="font-weight:800; font-size:16px">
+                                <span>
+                                    Łączna kwota
+                                </span>
+                                <span class="right-align right">
+                                    @String.Format("{0:C}", Model.Razem)
+                                </span>
+                            </div>
+                            <div class="row">
+                                <a class="waves-effect waves-light btn green darken-1" style="width:100%"><i class="material-icons right white-text">arrow_forward</i>Zamawiam</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+        @*<div class="row">
+            <div class="col s7 ">
+                <div class="card white card-shoping-cart">
+                    <div class="card-content black-text  card-content-shoping-card-item">
+                        <div class="row" id="shopingCardItem">
+                            <div class="col s2">
+                                <img src="https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2020/9/pr_2020_9_10_11_22_32_883_02.jpg" class="responsive-img" />
+                            </div>
+                            <div class="col s6">
+                                Nazwa
+                            </div>
+                            <div class="col s4">
+                                <div class="row deletecurrencyquantity ">
+                                    <div class="col s3">
+                                        <div class="input-field" id="quantity-product-add-shoping-card">
+                                            <select id="quantitySelected" onchange="quantitySelected(this)">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                                <option value="6">6</option>
+                                                <option value="7">7</option>
+                                                <option value="8">8</option>
+                                                <option value="9">9</option>
+                                                <option value="9+">9+</option>
+                                            </select>
+                                        </div>
+                                        <input type="text" min="0" class="quantityInput" value="1" style="display:none" />
+                                    </div>
+                                    <div class="col s7">
+                                        123
+                                    </div>
+                                    <div class="col s2">
+                                        <a class=" white-text btn-floating btn-small waves-effect waves-light red" asp-action="Delete" asp-route-Id="@Model">
+                                            <i class="material-icons center">delete</i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>*@
+<style>
+    input{
+        text-align:center;
+    }
+        input :focus {
+            border-bottom: 1px solid #000;
+            box-shadow: 0 1px 0 0 #000;
+        }
+   .btn-quantity {
+        display: flex;
+        align-items:center;
+    }
+    .value-button{
+        margin-left:2px;
+        margin-right:2px;
+    }
+    .shopingCardItem {
+        display: flex;
+        align-items: center;
+    }
+
+    input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+    /* Firefox */
+    input[type=number] {
+        -moz-appearance: textfield;
+    }
+    .card-content-shoping-card-item {
+        margin: 0px !important;
+        padding: 15px !important;
+    }
+    .deletecurrencyquantity{
+        display:flex !important;
+        align-items:center;
+    }
+</style>

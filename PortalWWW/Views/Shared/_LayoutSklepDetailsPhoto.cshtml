@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - SklepKomputerowy.CMS</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="~/lib/materialize/css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="~/lib/swipper/dist/css/swiper.min.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="~/lib/swipper/dist/css/swiper-bundle.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="~/lib/swipper/dist/css/modify-swipper.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="~/css/site.css" type="text/css" rel="stylesheet" />
+    <link href="~/css/ProducDetails.css" type="text/css" rel="stylesheet" />
+   
+</head>
+<body>
+    <header>
+        <div id="mainmenu" style="">
+            <nav class="white  navbar-fixed" id="nav-wrapper-mainmenu"  >
+                <div class="nav-wrapper" >
+                    <div id="logo">
+                        <a href="#" class="brand-logo"></a>
+                        <a href="#" class="sidenav-trigger "  data-target="mobile-nav" id="menuicon">
+                            <i class="material-icons black-text  " id="" >menu</i>
+                        </a>
+                    </div>
+                  
+                    <ul class="right   ">
+                        <li><a href="#"><i class="material-icons black-text " id="shopping-cart ">shopping_cart</i></a></li>
+                    </ul>
+                </div>
+            </nav>
+            <ul class="sidenav" id="mobile-nav">
+                @await Component.InvokeAsync("CategoryMenuComponent")
+            </ul>
+        </div>
+        <div id="menumediumscreen" class="hide-on-med-and-down" >
+            <nav class="grey darken-4 ">
+                <ul id="navontop">
+                    @await Component.InvokeAsync("CategoryMenuComponent")
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main role="main">
+ 
+      
+          
+            @RenderBody()
+        
+    </main>
+    <footer class="footer-copyright">
+       
+        <script src="~/lib/jquery/dist/jquery.min.js"></script>
+        <script src="~/lib/materialize/js/materialize.min.js"></script>
+        <script src="~/lib/materialize/js/init.js"></script>
+        <script src="~/lib/swipper/dist/js/swiper.min.js"></script>
+        <script src="~/lib/swipper/dist/js/swiperInit.js"></script>
+        <script src="~/lib/swipper/dist/js/swiper-bundle.min.js"s></script>
+        <script src="~/js/site.js" asp-append-version="true"></script>
+        @RenderSection("Scripts", required: false)
+    </footer>
+</body>
+</html>

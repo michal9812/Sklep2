@@ -1,0 +1,22 @@
+﻿@model SklepKomputerowy.Data.Data.Sklep.Kategoria
+@{
+    ViewData["Title"] = "Details";
+}
+<div class="row  ">
+    <h6 class="card-panel teal brown darken-4 white-text  header-backend-section-title">Szczczegóły @Model.Nazwa</h6>
+</div>
+<div class="row">
+    <form class="col s12">
+        <partial name="Przyciski/_PrzyciskiEdytujPowrot" model="@Model.IdKategorii" />
+        <div class="row">
+            <div class="input-field col s12">
+                <input asp-for="Nazwa"  readonly />
+                <label asp-for="Nazwa" ></label>
+            </div>
+            <div class="input-field col s12">
+                <input asp-for="Opis"  readonly />
+                <label asp-for="Opis" ></label>
+            </div>
+        </div>
+    </form>
+</div>

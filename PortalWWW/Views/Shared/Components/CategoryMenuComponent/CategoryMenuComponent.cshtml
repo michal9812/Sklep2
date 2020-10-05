@@ -1,0 +1,9 @@
+﻿    @model IEnumerable<SklepKomputerowy.Data.Data.Sklep.Kategoria>
+@{
+    Layout = null;
+}
+
+@foreach (var item in Model)
+{
+<li>  @Html.ActionLink(item.Nazwa, "Index", "Sklep", new { id = item.IdKategorii }, null)</li>
+}

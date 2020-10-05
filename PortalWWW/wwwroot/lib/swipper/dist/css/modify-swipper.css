@@ -1,0 +1,85 @@
+html,
+body {
+    position: relative;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.swiper-container-small-view {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide-small-view {
+    display: flex;
+    justify-content: center;
+    background-size: contain;
+    background-position: center center;
+    align-items: center;
+    background-repeat: no-repeat;
+    z-index: -999;
+    max-height: 300px;
+    margin-top: 5px;
+}
+
+.gallery-thumbs > .swiper-wrapper {
+    display: flex;
+    justify-content: center;
+    height: 150px;
+    width: 100%;
+    margin-top: -30px;
+}
+
+.swipper-conteiner-large {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+}
+
+
+.swiper-slide-large {
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    max-height: 300px;
+}
+
+.gallery-thumbs {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.swiper-slide-large-thumbs {
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+er-pagination-bullet {
+    cursor: pointer;
+    border-radius: 4px;
+    background-color: rgb(221, 221, 221);
+}
+
+span.swiper-pagination-bullet-active {
+    cursor: pointer;
+    border-radius: 4px;
+    background-color: rgb(117, 117, 117)
+}
+
+.swiper-pagination swiper-pagination-bullets {
+    position: relative;
+    bottom: -10px;
+}

@@ -1,0 +1,32 @@
+﻿@model PortalWWW.ViewModels.KoszykViewModel
+@{
+    Layout = null;
+}
+<div class="card horizontal">
+    <div class="card-stacked">
+        <div class="card-content row">
+            @foreach (var item in Model.ElementyKoszyka)
+            {
+                <div class="row  flex-center">
+                    <div class="col s4 ">
+                        <img src="~/DataFiles/@item.Produkt.FotoURL" class="responsive-img">
+                    </div>
+                    <div class="col s8 ">
+                        <a asp-page="/ProductDetalis" asp-route-id="@item.Produkt.idProduktu">  @String.Format(item.Produkt.Nazwa)</a>
+                    </div>
+                </div>
+                <div class="row flex-center">
+                    <div class="col  s4 left-align">
+                        @String.Format(item.Ilosc.ToString() + "szt")
+                    </div>
+                    <div class="col s8 right-align" >
+                        @String.Format("{0:C}", item.Produkt.Cena)
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+<style>
+    
+</style>

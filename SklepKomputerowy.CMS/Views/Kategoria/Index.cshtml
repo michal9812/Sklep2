@@ -1,0 +1,60 @@
+﻿@model IEnumerable<SklepKomputerowy.Data.Data.Sklep.Kategoria>
+@{
+    ViewData["Title"] = "Index";
+}
+<div class="row">
+    <div class="col s9  ">
+        <h6 class="flow-text">Lista Kategorii</h6>
+    </div>
+    <div class="col s3  ">
+        <p>
+            <a asp-action="Create" class="waves-effect waves-light btn btn-small blue darken-1"><i class="material-icons left">add</i>Dodaj Nową</a>
+        </p>
+    </div>
+</div>
+
+    @if (Model.Count() > 0)
+    {
+        <div class="row">
+            <div class="col s12">
+                <table class="table table-striped ">
+                    <thead>
+                        <tr>
+                            <th>
+                                @Html.DisplayNameFor(model => model.Nazwa)
+                            </th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody class="edit-table">
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <th>
+                                    @Html.DisplayFor(modelItem => item.Nazwa)
+                                </th>
+                                <partial name="Przyciski/_PrzyciskEdycjaSzczegolyUsuniecie" model="@item.IdKategorii" />
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    }
+    else
+    {
+        <!-- Modal Structure -->
+        <div id="modalListItemCheck" class="modal">
+            <div class="modal-content">
+                <h6>Nie znaleziono Kategorii </h6>
+                <p>Czy chcesz dodac?</p>
+            </div>
+            <div class="modal-footer">
+                <a href="#!" class="modal-close waves-effect waves-light btn red darken-1 white-text">Nie</a>
+                <a asp-action="Create" class="modal-close waves-effect waves-light btn green darken-1">Tak</a>
+            </div>
+        </div>
+        <div class="row">
+            <p class="card-panel teal yellow darken-2 white-text"> Nie ma kategorii</p>
+        </div>
+    }

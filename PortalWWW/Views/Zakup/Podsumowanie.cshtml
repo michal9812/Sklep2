@@ -1,0 +1,85 @@
+﻿@model SklepKomputerowy.Data.Data.Sklep.ZamowienieTemp
+@{
+    ViewData["Title"] = "Podsumowanie";
+    Layout = "~/Views/Shared/_LayoutSklep.cshtml";
+}
+
+    <div class="col s12">
+        <ul class="collapsible ">
+            <li class="active">
+                <div class="collapsible-header"><i class="material-icons">filter_drama</i>Dane Adresowe</div>
+                <div class="collapsible-body">
+                    <div class="col s12">
+                        <div class="row">
+                            <div class="input-field col s12 m4">
+                                <label asp-for="Imie"></label>
+                                <input asp-for="Imie" class="readonly-input-form" readonly />
+                            </div>
+                            <div class="input-field col s12 m4 ">
+                                <label asp-for="Nazwisko"></label>
+                                <input asp-for="Nazwisko" class="readonly-input-form" readonly />
+                            </div>
+                            <div class="input-field col s12 m4">
+                                <label asp-for="Kraj"></label>
+                                <input asp-for="Kraj" value="@ViewBag.Panstwo" readonly />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12 m4">
+                                <label asp-for="KodPocztowy"></label>
+                                <input asp-for="KodPocztowy" class="readonly-input-form" readonly />
+                            </div>
+                            <div class="input-field col s12 m4">
+                                <label asp-for="Ulica"></label>
+                                <input asp-for="Ulica" class="readonly-input-form" readonly />
+                            </div>
+                            <div class="input-field col s12 m4">
+                                <label asp-for="NumerDomu"></label>
+                                <input asp-for="NumerDomu" class="readonly-input-form" readonly />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12 m4">
+                                <label asp-for="Miasto"></label>
+                                <input asp-for="Miasto" class="readonly-input-form" readonly />
+                            </div>
+                            <div class="input-field col s12 m4 l4">
+                                <label asp-for="NumerTelefonu"></label>
+                                <input asp-for="NumerTelefonu" class="readonly-input-form" readonly />
+                            </div>
+                            <div class="input-field col s12 m4">
+                                <label asp-for="Email"></label>
+                                <input asp-for="Email" class="readonly-input-form" readonly />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="collapsible-header"><i class="material-icons">list</i>ListaProduktow</div>
+                <div class="collapsible-body">   @await Component.InvokeAsync("ListaProduktowZamowionychComponent", Model.IdZamowienieTemp)</div>
+            </li>
+        </ul>
+    </div>
+    <div class="card horizontal ">
+        <div class="card-stacked">
+            <div class="card-content">
+                <div class="row" style="font-weight:800; font-size:16px">
+                    <span>
+                        Łączna kwota
+                    </span>
+                    <span class="right-align right" id="total-value">
+                        @await Component.InvokeAsync("SumaZamowieniaComponent",Model.IdZamowienieTemp)
+                    </span>
+                </div>
+                <form asp-action="Kup">
+                    <div class="row">
+                        <button asp-action="Kup" asp-controller="Zakup" asp-route-id="@Model.IdZamowienieTemp" class="waves-effect waves-light btn green darken-1" style="width:100%" type="submit"><i class="material-icons right white-text">arrow_forward</i>Kupuję</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+<style>
+</style>

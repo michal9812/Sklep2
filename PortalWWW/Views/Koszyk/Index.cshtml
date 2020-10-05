@@ -1,0 +1,143 @@
+﻿@model PortalWWW.ViewModels.KoszykViewModel
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_LayoutSklep.cshtml";
+}
+<div id="listproduct" >
+    <div class="row">
+        <h2 style="font-size:26px;padding:4px;margin:4px; font-weight:700">Koszyk</h2>
+
+        <div class="col s7">
+            @if (Model.ElementyKoszyka.Count() > 0)
+            {
+                var item = Model.ElementyKoszyka.FirstOrDefault();
+                <div class="card white card-shoping-cart">
+                    <div class="card-content black-text card-content-shoping-card-item">
+                        <div class="row shopingCardItem">
+                            <div class="col s2">
+                                <img src="~/DataFiles/@item.Produkt.FotoURL" class="responsive-img">
+                            </div>
+                            <div class="col s5">
+                                <a asp-page="/ProductDetalis" asp-route-id="@item.Produkt.idProduktu">  @String.Format(item.Produkt.Nazwa)</a>
+                            </div>
+                            <div class="col s5">
+                                <div class="row deletecurrencyquantity ">
+                                    <div class="col s5">
+                                        @String.Format("{0:C}", item.Produkt.Cena)
+                                    </div>
+                                    <div class="col s5 btn-quantity">
+                                        <div class="value-button" id="decrease" value="Decrease Value"><button onclick="decreaseValue(this)" data-id="@item.IdElementuKoszyka" class="btn-small  white" type="submit"><i class="material-icons black-text ">remove</i></button></div>
+                                        <div text-id="@item.Ilosc">
+                                            <input type="number" id="item-count-@item.IdElementuKoszyka" value=@item.Ilosc min=1  style="border:none !important"/>
+                                        </div>
+                                        <div class="value-button" id="increse" value="Decrease Value"><button onclick="increaseValue(this)" @*asp-action="DodajDoKoszyka" asp-controller="Koszyk" asp-route-id="@item.Produkt.idProduktu"*@ class=" btn-small white   " type="submit" data-id="@item.IdElementuKoszyka"><i class="material-icons black-text ">add</i></button></div>
+                                    </div>
+                                    <div class="col s2">
+                                        <a class=" white-text btn-floating btn-small waves-effect waves-light white" asp-action="Delete" asp-route-Id="@Model">
+                                            <i class="material-icons center black-text">delete</i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+
+        </div>
+        <div class="col s5 ">
+            <div class="col s12  ">
+                <div class="card horizontal">
+                    <div class="card-stacked">
+                        <div class="card-content">
+                            <div class="row" style="font-weight:800; font-size:16px">
+                                <span>
+                                    Łączna kwota
+                                </span>
+                                <span class="right-align right" id="total-value">
+                                    @String.Format("{0:C}", Model.Razem)
+                                </span>
+                            </div>
+                            <div class="row">
+                                <a asp-action="Dane" class="waves-effect waves-light btn green darken-1" style="width:100%" asp-controller="Zakup"><i class="material-icons right white-text">arrow_forward</i>Zamawiam</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @if (Model.ElementyKoszyka.Count() > 1)
+    {
+        @for (int i = 1; i < Model.ElementyKoszyka.Count(); i++)
+        {
+            var item = Model.ElementyKoszyka[i];
+            <div class="row">
+
+                <div class="col s7">
+                    <div class="card white card-shoping-cart">
+                        <div class="card-content black-text card-content-shoping-card-item">
+                            <div class="row shopingCardItem">
+                                <div class="col s2">
+                                    <img src="~/DataFiles/@item.Produkt.FotoURL" class="responsive-img">
+                                </div>
+                                <div class="col s5">
+                                    <a asp-page="/ProductDetalis" asp-route-id="@item.Produkt.idProduktu">  @String.Format(item.Produkt.Nazwa)</a>
+                                </div>
+                                <div class="col s5">
+                                    <div class="row deletecurrencyquantity ">
+                                        <div class="col s5">
+                                            @String.Format("{0:C}", item.Produkt.Cena)
+                                        </div>
+                                        <div class="col s5 btn-quantity">
+                                            <div class="value-button" id="decrease" value="Decrease Value"><button onclick="decreaseValue(this)" data-id="@item.IdElementuKoszyka" class="btn-small  white" type="submit"><i class="material-icons black-text ">remove</i></button></div>
+                                            <div text-id="@item.Ilosc">
+                                                <input type="number" id="item-count-@item.IdElementuKoszyka" value=@item.Ilosc min=1 />
+                                            </div>
+                                            <div class="value-button" id="increse" value="Decrease Value"><button onclick="increaseValue(this)" @*asp-action="DodajDoKoszyka" asp-controller="Koszyk" asp-route-id="@item.Produkt.idProduktu"*@ class=" btn-small white   " type="submit" data-id="@item.IdElementuKoszyka"><i class="material-icons black-text ">add</i></button></div>
+                                        </div>
+                                        <div class="col s2">
+                                            <a class=" white-text btn-floating btn-small waves-effect waves-light white" asp-action="Delete" asp-route-Id="@Model">
+                                                <i class="material-icons center black-text">delete</i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+             
+            </div>
+
+        }
+    }
+</div>
+    
+
+<style>
+    #listproduct >*{
+        margin:0 !important;
+    }
+    input {
+        text-align: center;
+    }
+       
+    
+    input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+    /* Firefox */
+    input[type=number] {
+        -moz-appearance: textfield;
+    }
+
+</style>

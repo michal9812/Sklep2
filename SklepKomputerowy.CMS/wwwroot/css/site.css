@@ -1,0 +1,105 @@
+﻿/*footter bottom */
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+.container {
+    width: 100% !important;
+    max-width: initial;
+
+}
+
+    .container > .row {
+        margin: 4px !important;
+    }
+
+        .container > .row > .col {
+            padding: 4px !important;
+        }
+
+
+/*footter bottom */
+
+/*edit.edit-table */
+.edit-table tr:nth-child(2n+1) {
+    background-color: #CCC;
+}
+
+.edit-table tr:nth-child(2n) {
+    background-color: #fff;
+}
+/*edit.edit-table */
+input#boutoncolorwhite {
+    color: white;
+}
+
+.header-backend-section-title {
+    margin-top: 0.5em !important;
+    margin-bottom: 0.5em !important;
+}
+
+ nav,header, main, footer {
+    padding-left: 300px;
+}
+btn-cms-sklep-cms{
+    display:flex;
+
+}
+.row  {
+    margin: 0em !important;
+}
+#CreatePhoto{
+    display:flex;
+    justify-content:flex-start;
+    margin-bottom:0.3em !important;
+
+}
+
+
+@media only screen and (max-width : 992px) {
+    nav,header, main, footer {
+        padding-left: 0;
+    }
+}
+input:focus {
+    border-bottom: 1px solid #808080 !important;
+    box-shadow: 0 1px 0 0 #000 !important;
+}
+
+input :focus {
+    border-bottom: 1px solid #000 !important;
+    box-shadow: 0 1px 0 0 #000 !important;
+}
+
+.dropdown-content li > span {
+    text-align: center;
+    color: black;
+}
+
+.input-field-crate-order-form > label {
+    font-size: 0.75rem;
+}
+
+.input-field-crate-order-form {
+    padding-right: 1rem;
+    margin-bottom: 0;
+    margin-bottom: 0.5rem;
+}
+input:focus {
+    border-bottom: 1px solid #808080 !important;
+    box-shadow: 0 1px 0 0 #000 !important;
+}
+
+input :focus {
+    border-bottom: 1px solid #000 !important;
+    box-shadow: 0 1px 0 0 #000 !important;
+}
+input +label{
+    color:black !important;
+}

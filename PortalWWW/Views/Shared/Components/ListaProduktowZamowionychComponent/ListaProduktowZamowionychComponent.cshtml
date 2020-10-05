@@ -1,0 +1,27 @@
+﻿@model IEnumerable<SklepKomputerowy.Data.Data.Sklep.PozycjaZamowieniaTemp>
+@{
+    Layout = null;
+}
+@foreach (var item in Model)
+{
+    <div class="row  flex-center">
+        <div class="col s2">
+            <img src="~/DataFiles/@item.Produkt.FotoURL" class="responsive-img">
+        </div>
+        <div class="col s4 ">
+            <a asp-page="/ProductDetalis" asp-route-id="@item.Produkt.idProduktu">  @String.Format(item.Produkt.Nazwa)</a>
+        </div>
+        <div class="col s2">
+            @String.Format(item.Ilosc.ToString() + "szt")
+        </div>
+        <div class="col s4 right-align">
+            @String.Format("{0:C}", item.Produkt.Cena)
+        </div>
+    </div>
+}
+<style>
+    .flex-center {
+        display: flex !important;
+        align-items: center;
+    }
+</style>

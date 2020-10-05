@@ -1,0 +1,27 @@
+﻿@model IEnumerable<SklepKomputerowy.Data.Data.Sklep.Produkt>
+@{
+    ViewData["Title"] = "Sklep";
+    Layout = "~/Views/Shared/_LayoutSklep.cshtml";
+}
+<div class="row">
+    @foreach (var item in Model)
+    {
+        <div class="col s12 m4 l3  ">
+            <div class="card card-1 card-product">
+                <a class=" btn-small  btn-large waves-effect waves-light red product-currency">@item.Cena.ToString("C")</a>
+                <div class="card-image ">
+                    <img src="~/DataFiles/@item.FotoURL">
+                </div>
+                <ul class="btn-list-product">
+                    <li><a class=" btn-small waves-effect waves-light green"><i class="material-icons">share</i></a></li>
+                    <li><a class=" btn-small waves-effect waves-light blue" asp-page="/ProductDetalis" asp-route-id="@item.idProduktu"  ><i class="material-icons">more_horiz</i></a></li>
+                    <li><a asp-controller="Koszyk" asp-action="DodajDoKoszyka"  asp-route-id="@item.idProduktu" class=" btn-small waves-effect waves-light white "><i class="material-icons buy green-text">add_shopping_cart</i></a></li>
+                </ul>
+                <div class="card-content product-description">
+                    <span class="card-title card-title-product">@item.Nazwa</span>
+                   
+                </div>
+            </div>
+        </div>
+    }
+</div>

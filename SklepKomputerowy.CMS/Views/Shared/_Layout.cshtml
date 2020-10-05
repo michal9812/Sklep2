@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - SklepKomputerowy.CMS</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="~/css/site.css" type="text/css" rel="stylesheet" />
+    <link href="~/css/jquery-ui.min.css" type="text/css" rel="stylesheet" />
+    <link href="~/lib/materialize/css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection" />
+
+
+</head>
+<body>
+    <header>
+        <!-- Sidenav -->
+        <!--<nav class="green darken-1">-->
+        <!--  Navbar structure, visible on desktop -->
+        <!--<div class="nav-wrapper container">-->
+        <!--  Trigger sidenav  -->
+        <!--<a data-target="slide-out" class="sidenav-trigger show-on-large "><i class="material-icons">menu</i></a>-->
+        <!-- Brand Logo -->
+        <!--<a asp-controller="Home" asp-action="Index" class="brand-logo center">SklepKomputerowy.CMS</a>
+
+    </div>-->
+        <!--  Sidenav structure, visible on tablet and mobile  -->
+        <!--<ul id="slide-out" class="sidenav">
+
+            <li><a class="waves-effect" asp-controller="Kategoria" asp-action="Index">Kategoria</a></li>
+            <li><a class="waves-effect" asp-controller="Produkt" asp-action="Index">Kategoria</a></li>
+
+        </ul>
+    </nav>-->
+        <!-- Sidenav -->
+
+            <nav class="green darken-2">
+                <div class="nav-wrapper ">
+                    <div class="row ">
+                        <div class="col s12">
+                            <a href="#" data-target="sidenav-1" class="left sidenav-trigger hide-on-medium-and-up"><i class="material-icons">menu</i></a>
+                       
+                            <a asp-controller="Home" asp-action="Index" class="brand-logo center">SklepKomputerowy.CMS</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+
+
+
+        <!-- LEFT SIDEBAR	 -->
+    <ul id="sidenav-1" class="sidenav sidenav-fixed">
+
+        <li><a class="waves-effect" asp-controller="Kategoria" asp-action="Index">Kategoria</a></li>
+        <li><a class="waves-effect" asp-controller="Produkt" asp-action="Index">Produkt</a></li>
+        <li><a class="waves-effect" asp-controller="Zamowienie" asp-action="Index">Zamowienie</a></li>
+    </ul>
+    
+
+    <main role="main">
+        <div class="container">
+            @RenderBody()
+        </div>
+    </main>
+
+    <footer class="footer-copyright">
+        <div class=" green darken-4 white-text">
+            1211323
+        </div>
+
+        <script src="~/lib/jquery/dist/jquery.min.js"></script>
+
+        <script src="~/lib/materialize/js/materialize.min.js"></script>
+
+        <script src="~/lib/jquery/dist/jquery-ui.min.js"></script>
+        <script src="~/lib/materialize/js/init.js"></script>
+        <script src="~/lib/jquery/dist/datepicker-pl.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/d3js/6.1.1/d3.min.js"></script>
+
+        <script src="~/js/site.js" asp-append-version="true"></script>
+        @RenderSection("Scripts", required: false)
+    </footer>
+
+
+ 
+</body>
+</html>

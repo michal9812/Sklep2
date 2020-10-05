@@ -1,0 +1,25 @@
+﻿@model IEnumerable<SklepKomputerowy.Data.Data.Sklep.Zamowienie>
+
+
+@foreach (var item in Model)
+{
+    <tr>
+        <td>
+            @Convert.ToDateTime(item.DataZamowienia).ToString("dd/MM/yyyy")
+        </td>
+        <td>
+            @Html.DisplayFor(modelItemItem => item.Imie)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Nazwisko)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Miasto)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Razem)
+        </td>
+
+        <partial name="Przyciski/_PrzyciskEdycjaSzczegolyUsuniecie" model=" item.IdZamowienia" />
+    </tr>
+}

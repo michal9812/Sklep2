@@ -1,0 +1,28 @@
+﻿@model SklepKomputerowy.Data.Data.Sklep.Kategoria
+@{
+    ViewData["Title"] = "Tworzenie ktegorii";
+}
+<div class="row  ">
+    <h6 class="card-panel teal brown darken-4 white-text  header-backend-section-title" >Dodaj Kategorie</h6>
+</div>
+<div class="row">
+    <form class="col s12" asp-action="Create">
+        <partial name="Przyciski/_PrzyciskiDodajPowrot" />
+        <div asp-validation-summary="ModelOnly" class="text-danger red-text"></div>
+        <div class="row">
+            <div class="input-field col s12">
+                <input asp-for="Nazwa"  />
+                <label asp-for="Nazwa" ></label>
+                <span asp-validation-for="Nazwa" class="text-danger red-text"></span>
+            </div>
+            <div class="input-field col s12">
+                <input asp-for="Opis"  />
+                <label asp-for="Opis"></label>
+            </div>
+            <span asp-validation-for="Opis" class="text-danger"></span>
+        </div>
+    </form>
+</div>
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

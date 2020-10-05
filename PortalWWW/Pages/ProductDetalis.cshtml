@@ -1,0 +1,100 @@
+﻿@page
+@model PortalWWW.Pages.ProductDetalisModel
+@{
+    Layout = "_LayoutSklepDetailsPhoto";
+}
+<div class="swiper-container swiper-container-small-view hide-on-large-only">
+    <div class="swiper-wrapper">
+        @foreach (var item in Model.ZdjeciaList)
+        {
+            <div class="swiper-slide swiper-slide-small-view" style="background-image: url('@Url.Content($"~/DataFiles/{@item.ZdjecieURL.Replace("\\","/")}")')"></div>
+        }
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+</div>
+<br />
+<div class="container  hide-on-large-only">
+    <div class="row">
+        <h1 class="prudct-title col s12 left-align">@Model.Produkt.Nazwa</h1>
+    </div>
+    <div class="row">
+        <span class="currency-details-model col s12 right-align"> @Model.Produkt.Cena.ToString("C")</span>
+    </div>
+    <div id="conteiner-btn-add-shoping-count">
+        <div class="input-field" id="quantity-product-add-shoping-card">
+            <select>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="">9+</option>
+            </select>
+        </div>
+        <button class="waves-effect waves-light btn green" id="btn-add-shoping-card"><i class="material-icons left"> add_shopping_cart</i>Do koszyka</button>
+    </div>
+</div>
+<div class="row hide-on-large-only">
+    <div class=" col s12">
+        <p class="flow-text">
+            @Model.Produkt.Opis;
+        </p>
+    </div>
+</div>
+<div class="row hide-on-med-and-down">
+    <div class=" col s4">
+        <div class="swiper-container swipper-conteiner-large gallery-top " id="fullGalery">
+            <div class="swiper-wrapper">
+                @foreach (var item in Model.ZdjeciaList)
+                {
+                    <div class="swiper-slide swiper-slide-large" style="background-image: url('@Url.Content($"~/DataFiles/{@item.ZdjecieURL.Replace("\\","/")}")')"></div>}
+            </div>
+            <!-- Add Arrows -->
+            @*<div class="swiper-button-next" id="arrow-next"></div>
+                <div class="swiper-button-prev" id="arrow-back"></div>*@
+        </div>
+        <div class="swiper-container gallery-thumbs">
+            <div class="swiper-wrapper">
+                @foreach (var item in Model.ZdjeciaList)
+                {
+                    <div class="swiper-slide swiper-slide-large-thumbs " style="background-image: url('@Url.Content($"~/DataFiles/{@item.ZdjecieURL.Replace("\\","/")}")')"></div>}
+            </div>
+        </div>
+        <div id="conteiner-btn-add-shoping-count">
+            <div class="input-field" id="quantity-product-add-shoping-card">
+                <select>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="">9+</option>
+                </select>
+            </div>
+            <button class="waves-effect waves-light btn green" id="btn-add-shoping-card"><i class="material-icons left"> add_shopping_cart</i>Do koszyka</button>
+        </div>
+    </div>
+
+    <div class="col s8"  >
+        <div class="row  " style="display:flex">
+            <h1 class="prudct-title left-align col s8  ">@Model.Produkt.Nazwa</h1>
+            <span class="currency-details-model  col s4 "> @Model.Produkt.Cena.ToString("C")</span>
+        </div>
+        <ul class="collapsible" id="colisableinProductDetalis">
+            <li class="active">
+                <div class="collapsible-header"><i class="material-icons">description</i>Opis produktu</div>
+                <div class="collapsible-body"><span>@Model.Produkt.Opis</span></div>
+            </li>
+        </ul>
+
+    </div>
+</div>

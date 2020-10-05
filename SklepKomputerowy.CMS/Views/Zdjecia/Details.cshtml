@@ -1,0 +1,30 @@
+﻿@model SklepKomputerowy.Data.Data.Sklep.Zdjecia
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Zdjecia</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ZdjecieURL)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ZdjecieURL)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.idProduktu)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.idProduktu)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.idZdjecia">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

@@ -1,0 +1,97 @@
+﻿@model SklepKomputerowy.Data.Data.Sklep.ZamowienieTemp
+@{
+    ViewData["Title"] = "Dane";
+    Layout = "~/Views/Shared/_LayoutSklep.cshtml";
+}
+<div class="row">
+    <form asp-action="Dane" method="post">
+        <div asp-validation-summary="ModelOnly" class="text-danger invalid"></div>
+        <div class="col s6 m8">
+
+            <div class="row">
+                <div class="input-field col s12 m4">
+                    <label asp-for="Imie" ></label>
+                    <input asp-for="Imie" class="validate" required />
+                    <span asp-validation-for="Imie" class="text-danger invalid"></span>
+                </div>
+                <div class="input-field col s12 m4 ">
+                    <label asp-for="Nazwisko" ></label>
+                    <input asp-for="Nazwisko" class="validate" required />
+                    <span asp-validation-for="Nazwisko" class="text-danger invalid"></span>
+                </div>
+                <div class="input-field col s12 m4">
+
+                        @Html.DropDownList("IDKraju", (SelectList)ViewBag.ListaPanstw,"Wybierz Państwo")
+
+
+                    <span asp-validation-for="IDKraju" class="text-danger invalid"></span>
+                
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12 m4">
+                    <label asp-for="KodPocztowy" ></label>
+                    <input asp-for="KodPocztowy" class="validate" required />
+                    <span asp-validation-for="KodPocztowy" class="text-danger invalid"></span>
+                </div>
+                <div class="input-field col s12 m4">
+                    <label asp-for="Ulica" ></label>
+                    <input asp-for="Ulica" class="validate" required />
+                    <span asp-validation-for="Ulica" class="text-danger invalid"></span>
+                </div>
+                <div class="input-field col s12 m4">
+                    <label asp-for="NumerDomu" ></label>
+                    <input asp-for="NumerDomu" class="validate" required />
+                    <span asp-validation-for="NumerDomu" class="text-danger invalid"></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12 m4">
+                    <label asp-for="Miasto" ></label>
+                    <input asp-for="Miasto" class="validate" required />
+                    <span asp-validation-for="Miasto" class="text-danger invalid"></span>
+                </div>
+                <div class="input-field col s12 m4 l4">
+                    <label asp-for="NumerTelefonu" ></label>
+                    <input asp-for="NumerTelefonu" class="validate" required />
+                    <span asp-validation-for="NumerTelefonu" class="text-danger invalid"></span>
+                </div>
+                <div class="input-field col s12 m4">
+                    <label asp-for="Email" ></label>
+                    <input asp-for="Email" class="validate" required />
+                    <span asp-validation-for="Email" class="text-danger invalid"></span>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="col s6 m4 ">
+            <div class="card horizontal">
+                <div class="card-stacked">
+                    <div class="card-content">
+                        <div class="row" style="font-weight:800; font-size:16px">
+                            <span>
+                                Łączna kwota
+                            </span>
+                            <span class="right-align right" id="total-value">
+                                @await Component.InvokeAsync("SumaWKoszykuComponent")
+                            </span>
+                        </div>
+                        <div class="row">
+                            <button asp-action="Dane" asp-controller="Zakup" class="waves-effect waves-light btn green darken-1" style="width:100%" type="submit"><i class="material-icons right white-text">arrow_forward</i>Podsuowanie</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+            @await Component.InvokeAsync("ListaProduktowWKoszykuComponent")
+        </div>
+    </form>
+
+</div>
+<style>
+    .text-danger {
+        color: red;
+    }
+</style>
