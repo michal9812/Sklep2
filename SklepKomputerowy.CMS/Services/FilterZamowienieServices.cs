@@ -41,7 +41,7 @@ namespace SklepKomputerowy.CMS.Services
                 return _context.Zamowienie.Where(z => z.DataZamowienia <= dataKoniecDateTime);
 
             }
-            return null;
+        
         }
     }
 }
