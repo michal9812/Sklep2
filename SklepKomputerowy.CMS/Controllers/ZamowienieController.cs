@@ -54,7 +54,24 @@ namespace SklepKomputerowy.CMS.Controllers
                 {
                     return PartialView(_filterZamowienieServices.FiltrujPoAdresie(adres));
                 }
+                else if(string.IsNullOrEmpty(dataPoczotek)&& string.IsNullOrEmpty(dataKoniec))
+                {
+                    return PartialView(_filterZamowienieServices.FiltrujPoAdresieDaneOsobowe(adres,imieNazwisko));
+                }
+                else if (string.IsNullOrEmpty(dataPoczotek))
+                {
+                    return PartialView(!(string.IsNullOrEmpty(adres) && string.IsNullOrEmpty(imieNazwisko) && string.IsNullOrEmpty(dataPoczotek) && string.IsNullOrEmpty(dataKoniec)));
+                }
+
+
+
             }
+
+            if (string.IsNullOrEmpty(imieNazwisko))
+            {
+                throw new ArgumentException($"'{nameof(imieNazwisko)}' cannot be null or empty", nameof(imieNazwisko));
+            }
+
             return null;
 
         }
